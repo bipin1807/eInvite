@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .body {
+            background: linear-gradient(45deg, #FF5722, #00000080);
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .main-contaoner {
+            display: grid;
+            justify-content: center;
+            margin: 4rem;
+        }
+        
+        .header1 {
+            font-size: 5rem;
+            font-family: cursive;
+            font-weight: bolder;
+            font-style: oblique;
+            font-variant-caps: titling-caps;
+            color: #c8a272;
+            text-align: left;
+        }
+        
+        .appLogo {
+            height: fit-content;
+            width: 95vw;
+        }
+    </style>
+
+</head>
+
+
+
+<body class="body">
+    <div class="header1" onClick="goBack()">back</div>
+    <div class="main-contaoner">
+        <img src="source.gif" class="appLogo" />
+    </div>
+
+    <script>
+        function goBack() {
+            location.replace("events.html")
+        }
+    </script>
+</body>
+
+</html>

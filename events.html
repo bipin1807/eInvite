@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        .body {
+            /* background-image: url('Wedding.png'); */
+            background: linear-gradient(45deg, #FF5722, #00000080);
+            overflow: hidden;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        .main-contaoner {
+            display: grid;
+            justify-content: center;
+            margin: 4rem;
+        }
+        
+        .header1 {
+            font-size: 5rem;
+            font-family: cursive;
+            font-weight: bolder;
+            font-style: oblique;
+            font-variant-caps: titling-caps;
+            color: #c8a272;
+            text-align: left;
+            /* margin-top: 11rem; */
+        }
+        
+        .appLogo {
+            height: 20rem;
+            width: 30rem;
+        }
+    </style>
+
+</head>
+
+
+
+<body class="body">
+    <div class="header1" onClick="goBack()">back</div>
+    <div class="main-contaoner">
+        <div>VENUE</div>
+        <div>dfsfknsjnkdjf</div>
+        <div class="header1">
+            SANGEET 26th feb 2020
+        </div>
+        <div class="header1">
+            Muhrat 27th feb 2020
+        </div>
+        <div class="header1">
+            RECEPTION 28th feb 2020
+        </div>
+
+    </div>
+
+    <script>
+        function goBack() {
+            location.replace("invite.html")
+        }
+        window.addEventListener('load', function() {
+            setTimeout(function() {
+                location.replace("saveDates.html");
+            }, 5000);
+        })
+    </script>
+</body>
+
+</html>
